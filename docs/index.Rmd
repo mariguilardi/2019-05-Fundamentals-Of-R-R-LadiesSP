@@ -1,6 +1,6 @@
 ---
 title: "Oficina Fundamentos de R"
-subtitle: "R-Ladies São Paulo <br> <br> [bit.ly/rladiesSP9](http://bit.ly/rladiesSP6)"
+subtitle: "R-Ladies São Paulo <br> <br> [bit.ly/rladiesSP9](http://bit.ly/rladiesSP9)"
 date: "25/05/2019"
 encoding: "UTF-8"
 output:
@@ -20,17 +20,15 @@ knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 class:  center, middle
 
 ##Organização e realização:
-```{r echo=FALSE, fig.align='center', out.width="15%"}
+```{r echo=FALSE, fig.align='center', out.width="25%"}
 knitr::include_graphics("img/rladies.jpeg")
 ```
 [R-Ladies São Paulo](https://www.meetup.com/R-Ladies-Sao-Paulo)
 
 ##Apoio:
-
-```{r echo=FALSE, fig.align='center', out.width="50%"}
-#knitr::include_graphics("img/conre-3.png") ALTERAR
+```{r echo=FALSE, fig.align='center', out.width="30%"}
+knitr::include_graphics("img/logo-spc.png")
 ```
-
 
 
 ---
@@ -125,9 +123,9 @@ class:   middle
 
 - O que é o R?
 
-- Boas Práticas de Programação
-
 - Introdução ao RStudio
+
+- Boas Práticas Iniciais de Programação
 
 - Fundamentos de R
 
@@ -140,12 +138,42 @@ Um algoritmo é uma sequência finita de instruções.
 
 **Exemplo**
 
-* receita de bolo
-```{r echo=FALSE, fig.align='center', out.width="60%"}
-knitr::include_graphics("bolo-kit-kat-4.jpg")
+* Receita de bolo
+
+```{r echo=FALSE, fig.align='center', out.width="90%"}
+knitr::include_graphics("img/receita-bolo.jpg")
 ```
 
 ---
+
+# O que é um algoritmo?
+
+Um algoritmo é uma sequência finita de instruções.
+
+**Mais exemplos**
+
+* [Construir uma estante de livros](https://pt.wikihow.com/Construir-uma-Estante-de-Livros)
+
+```{r echo=FALSE, fig.align='center', out.width="70%"}
+knitr::include_graphics("img/estante.jpg")
+```
+
+---
+
+# O que é um algoritmo?
+
+Um algoritmo é uma sequência finita de instruções.
+
+**Mais exemplos**
+
+* [Fazer um drone caseiro com arduino](https://www.palpitedigital.com/como-fazer-drone-caseiro-arduino/)
+
+```{r echo=FALSE, fig.align='center', out.width="50%"}
+knitr::include_graphics("img/drone-arduino-e1469058606329-600.webp")
+```
+
+---
+
 #O que é programar? 
 Programar um computador é escrever instruções em qualquer **linguagem** que o computador entenda.
 
@@ -155,6 +183,8 @@ Essa sequência de instruções pode ser executada por um humano ou um computado
 print('Ola!')
 
 ```
+
+**[Vamos exercitar um pouco?](link jogo)**
 
 ---
 
@@ -170,7 +200,9 @@ print('Ola!')
 ```{r echo=FALSE, out.width="30%"}
 knitr::include_graphics("img/Rlogo.png")
 ```
+
 ---
+
 # O que é o R?
 * Berço na Estatística
 
@@ -186,7 +218,9 @@ knitr::include_graphics("img/Rlogo.png")
 
 - É uma linguagem de programação para análise de dados
 
-- É open source 
+- É open source
+
+- É uma linguagem interpretada
 
 - Possui uma comunidade ativa de desenvolvedores
 
@@ -196,12 +230,12 @@ knitr::include_graphics("img/Rlogo.png")
 
 - É reprodutível!
 
-- Compartilhável!
+- É compartilhável!
 
 
 ---
 
-# O que podemos fazer com o R?
+# O que é possível fazer com R?
 
 * Análise de dados - Estatística, modelagem, etc.
 
@@ -222,7 +256,7 @@ knitr::include_graphics("img/Rlogo.png")
 **Exemplo: Gráfico elaborado com R - Proposta Orçamentária PMSP 2019 - 10 maiores orçamentos** 
 
 ```{r echo=FALSE, out.width="90%"}
-knitr::include_graphics("https://beatrizmilz.github.io/DadosExecucaoOrcamentariaPMSP/proposta2019_files/figure-html/unnamed-chunk-5-1.png") 
+knitr::include_graphics("img/PMSP-chunk-5-1.png") 
 ```
 Fonte: [Explorando o orçamento da Prefeitura Municipal de São Paulo](https://beatrizmilz.github.io/DadosExecucaoOrcamentariaPMSP/proposta2019.html)
 
@@ -232,23 +266,23 @@ Fonte: [Explorando o orçamento da Prefeitura Municipal de São Paulo](https://b
 **Exemplo: Gráfico elaborado com R - Execução Orçamentária PMSP na função Gestão Ambiental** 
 
 ```{r echo=FALSE, out.width="90%"}
-knitr::include_graphics("https://beatrizmilz.github.io/DadosExecucaoOrcamentariaPMSP/gestaoambiental_files/figure-html/unnamed-chunk-5-1.png") 
+knitr::include_graphics("img/PMSP-chunk-5-2.png") 
 ```
 Fonte: [Explorando o orçamento da Prefeitura Municipal de São Paulo](https://beatrizmilz.github.io/DadosExecucaoOrcamentariaPMSP/gestaoambiental.html)
 
 
 ---
 
-**Exemplo: Gráfico elaborado com R - Material Particulado 10 - Dados CETESB - RPollution;** 
+**Exemplo: Gráfico elaborado com R - Material Particulado 10 - Dados CETESB - RPollution** 
 
 ```{r echo=FALSE, out.width="90%"}
-knitr::include_graphics("https://www.rpollution.com/blog/pm-em-sp_files/figure-html/unnamed-chunk-6-1.png") 
+knitr::include_graphics("img/PMSP-chunk-6-1.png") 
 ```
 Fonte: [Rpollution](https://www.rpollution.com/)
 
 ---
 
-**Exemplo: Frequência de Palavras - TESE Doutorado PROCAM/USP Ana Lucia Spinola;** 
+**Exemplo: Frequência de Palavras - TESE Doutorado PROCAM/USP Ana Lucia Spinola** 
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("img/ana-lu-freq.png") 
@@ -256,62 +290,12 @@ knitr::include_graphics("img/ana-lu-freq.png")
 Fonte: [Ana Lu Spinola](https://analuspi.github.io/Text-Mining/)
 ---
 
-**Exemplo: BIGRAM - TESE Doutorado PROCAM/USP Ana Lucia Spinola;** 
+**Exemplo: BIGRAM - TESE Doutorado PROCAM/USP Ana Lucia Spinola** 
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("img/bigram-ana-lu.png") 
 ```
 Fonte: [Ana Lu Spinola](https://analuspi.github.io/Text-Mining/)
-
----
-
-# Antes de começar, criar um projeto
-
-> Ao realizar um projeto, sempre organizar os arquivos em uma **pasta** que conterá todos os arquivos de seu projeto. 
-
-> Nomear novos arquivos com **nomes descritivos**
-
-
-```{r echo=FALSE, out.width="100%"}
-knitr::include_graphics("img/organização_arquivos.png") 
-```
-
----
-# Boas práticas para organizar seu projeto
-
-> **Tratar dados como somente leitura: **esse é provavelmente o objetivo mais importante da configuração de um projeto. Os dados geralmente consomem tempo e/ou são caros para coletar. Trabalhar com eles interativamente (por exemplo, no Excel), onde eles podem ser modificados, significa que você nunca tem certeza de onde os dados vieram, ou como eles foram modificados desde a coleta. Portanto, é uma boa ideia tratar seus dados como “somente leitura”.
-
-> **Qualquer coisa gerada pelos seus scripts deve ser tratada como descartável: **todos devem poder ser criados novamente a partir dos seus scripts. Existem várias maneiras diferentes de gerenciar essa saída. Acho útil ter uma pasta de saída com subdiretórios diferentes para cada análise separada. Isso fica mais fácil depois, já que muitas das análises são exploratórias e não acabam sendo usadas no projeto final, e algumas análises são compartilhadas entre os projetos.
-
-Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
----
-
-# Criando um projeto
-```{r}
-# acho que esse criando m projeto poderia ser lá embaixo quando dar os desafios. O primeiro desafio seria criar um projeto (o que vcs acham?)
-```
-
-1. Clique na opção **“File”** do menu, e então em **“New Project”**.
-
-1.  Clique em **“New Directory”**.
-
-1.  Clique em **“New Project”**.
-
-1.  Escreva o nome do diretório (pasta) onde deseja manter seu projeto, ex “my_project”.
-
-1.  Clique no botão **“Create Project”**.
-
-
-OBS: Crie um novo script para escrever seus códigos!
-  **File -> New File -> RScript **
-
----
-
-# Projetos
-
-> "Um bom layout de projeto facilitará sua vida: ajudará a garantir a integridade de seus dados; facilita o compartilhamento de seu código com outra pessoa (colega de laboratório, colaborador ou orientador); ele permite que você facilmente faça o upload do seu código com a submissão do seu manuscrito; torna-se mais fácil recuperar o projeto depois de um intervalo. "
-
-Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
 
 ---
 
@@ -345,56 +329,56 @@ Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/01-rstudio
 
 ---
 # RStudio
-```{r echo=FALSE, out.width="90%"}
+```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/haydee1.jpg")
 ```
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-```{r echo=FALSE, out.width="90%"}
+```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/haydee2.jpg")
 ```
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-```{r echo=FALSE, out.width="90%"}
+```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/haydee3.jpg")
 ```
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-```{r echo=FALSE, out.width="90%"}
+```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/haydee4.jpg")
 ```
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-```{r echo=FALSE, out.width="90%"}
+```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/haydee5.jpg")
 ```
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-```{r echo=FALSE, out.width="90%"}
+```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/haydee6.jpg")
 ```
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-```{r echo=FALSE, out.width="90%"}
+```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/haydee7.jpg")
 ```
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-```{r echo=FALSE, out.width="90%"}
+```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/haydee8.jpg")
 ```
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
@@ -413,6 +397,76 @@ help(sum)
 
 - Se a dúvida permanecer, procure no [Stack OverFlow](https://stackoverflow.com/) ou Google.
 - E se ainda tiver dúvidas, pergunte para a comunidade (há grupos no Telegram e outras redes sociais).
+
+---
+
+class: center, middle
+# Boas práticas iniciais para organizar seu projeto
+
+---
+
+> **Tratar dados como somente leitura:** esse é provavelmente o objetivo mais importante da configuração de um projeto. Os dados geralmente consomem tempo e/ou são caros para coletar. Trabalhar com eles interativamente (por exemplo, no Excel), onde eles podem ser modificados, significa que você nunca tem certeza de onde os dados vieram, ou como eles foram modificados desde a coleta. Portanto, é uma boa ideia tratar seus dados como “somente leitura”.
+
+
+> **Qualquer coisa gerada pelos seus scripts deve ser tratada como descartável:** todos devem poder ser criados novamente a partir dos seus scripts. Existem várias maneiras diferentes de gerenciar essa saída. Acho útil ter uma pasta de saída com subdiretórios diferentes para cada análise separada. Isso fica mais fácil depois, já que muitas das análises são exploratórias e não acabam sendo usadas no projeto final, e algumas análises são compartilhadas entre os projetos.
+
+Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
+
+---
+
+> **Os nomes das suas variáveis devem fazer sentido:** Ao nomear suas variáveis, dê nomes que tenham significado para seres humanos. Pense que o código que você escreve hoje deve ser claro para você daqui 1 ano e também deve ser claro para algum(a) colega seu(ua).
+
+> **Comente bem o seu código:** É possível fazer comentários usando o símbolo '#'. É sempre bom explicar o que uma variável armazena, o que uma função faz, porque alguns parâmetros são passados para uma determinada função, qual é o objetivo de um trecho de código, etc.
+
+> **Evite linhas de código muito longas:** Usar linhas de código mais curtas ajuda na leitura do código.
+
+> **Escreva um código organizado:** Por exemplo, adote um padrão no uso de minúsculas e maiúsculas, uma lógica única na organização de pastas e arquivos, pode ser adotada uma breve descrição (como comentário) indicando o que um determinado script faz.
+
+> **Carregue todos os pacotes que irá usar sempre no início do arquivo:** Quando alguém abrir o seu código será fácil identificar quais são os pacotes que devem ser instalados e quais dependências podem existir.
+
+> **Evite referência de caminho que considere seu computador ou usuário:** Faça referência ao caminho do projeto.
+
+---
+
+# Antes de começar: o projeto
+
+> Ao realizar um projeto, sempre organizar os arquivos em uma **pasta** que conterá todos os arquivos de seu projeto. 
+
+> Nomear novos arquivos com **nomes descritivos**
+
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/organização_arquivos.png") 
+```
+
+---
+
+# Projetos
+
+> "Um bom layout de projeto facilitará sua vida: ajudará a garantir a integridade de seus dados; facilita o compartilhamento de seu código com outra pessoa (colega de laboratório, colaborador ou /orientador); ele permite que você facilmente faça o upload do seu código com a submissão do seu manuscrito; torna-se mais fácil recuperar o projeto depois de um intervalo. "
+
+Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
+
+---
+
+# Criando um projeto
+```{r}
+```
+
+1. Clique na opção **“File”** do menu, e então em **“New Project”**.
+
+1.  Clique em **“New Directory”**.
+
+1.  Clique em **“New Project”**.
+
+1.  Escreva o nome do diretório (pasta) onde deseja manter seu projeto, ex “my_project”.
+
+1.  Clique no botão **“Create Project”**.
+
+
+OBS: Crie um novo script para escrever seus códigos!
+  **File -> New File -> RScript **
+
 ---
 
 # Atalhos importantes

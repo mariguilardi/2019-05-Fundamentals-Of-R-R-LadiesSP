@@ -12,7 +12,7 @@
 class: center, middle, inverse, title-slide
 
 # Oficina Fundamentos de R
-## R-Ladies São Paulo <br> <br> <a href="http://bit.ly/rladiesSP6">bit.ly/rladiesSP9</a>
+## R-Ladies São Paulo <br> <br> <a href="http://bit.ly/rladiesSP9">bit.ly/rladiesSP9</a>
 ### 25/05/2019
 
 ---
@@ -21,13 +21,11 @@ class: center, middle, inverse, title-slide
 class:  center, middle
 
 ##Organização e realização:
-&lt;img src="img/rladies.jpeg" width="15%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/rladies.jpeg" width="25%" style="display: block; margin: auto;" /&gt;
 [R-Ladies São Paulo](https://www.meetup.com/R-Ladies-Sao-Paulo)
 
 ##Apoio:
-
-
-
+&lt;img src="img/logo-spc.png" width="30%" style="display: block; margin: auto;" /&gt;
 
 
 ---
@@ -116,9 +114,9 @@ class:   middle
 
 - O que é o R?
 
-- Boas Práticas de Programação
-
 - Introdução ao RStudio
+
+- Boas Práticas Iniciais de Programação
 
 - Fundamentos de R
 
@@ -131,10 +129,36 @@ Um algoritmo é uma sequência finita de instruções.
 
 **Exemplo**
 
-* receita de bolo
-&lt;img src="bolo-kit-kat-4.jpg" width="60%" style="display: block; margin: auto;" /&gt;
+* Receita de bolo
+
+&lt;img src="img/receita-bolo.jpg" width="90%" style="display: block; margin: auto;" /&gt;
 
 ---
+
+# O que é um algoritmo?
+
+Um algoritmo é uma sequência finita de instruções.
+
+**Mais exemplos**
+
+* [Construir uma estante de livros](https://pt.wikihow.com/Construir-uma-Estante-de-Livros)
+
+&lt;img src="img/estante.jpg" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# O que é um algoritmo?
+
+Um algoritmo é uma sequência finita de instruções.
+
+**Mais exemplos**
+
+* [Fazer um drone caseiro com arduino](https://www.palpitedigital.com/como-fazer-drone-caseiro-arduino/)
+
+&lt;img src="img/drone-arduino-e1469058606329-600.webp" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
 #O que é programar? 
 Programar um computador é escrever instruções em qualquer **linguagem** que o computador entenda.
 
@@ -149,6 +173,8 @@ print('Ola!')
 ## [1] "Ola!"
 ```
 
+**[Vamos exercitar um pouco?](link jogo)**
+
 ---
 
 # O que é o R?
@@ -161,7 +187,9 @@ print('Ola!')
 * 1ª versão de 1995 por Ross Ihaka e Robert Gentleman da Universidade de Auckland
 
 &lt;img src="img/Rlogo.png" width="30%" style="display: block; margin: auto;" /&gt;
+
 ---
+
 # O que é o R?
 * Berço na Estatística
 
@@ -177,7 +205,9 @@ print('Ola!')
 
 - É uma linguagem de programação para análise de dados
 
-- É open source 
+- É open source
+
+- É uma linguagem interpretada
 
 - Possui uma comunidade ativa de desenvolvedores
 
@@ -187,12 +217,12 @@ print('Ola!')
 
 - É reprodutível!
 
-- Compartilhável!
+- É compartilhável!
 
 
 ---
 
-# O que podemos fazer com o R?
+# O que é possível fazer com R?
 
 * Análise de dados - Estatística, modelagem, etc.
 
@@ -212,7 +242,7 @@ print('Ola!')
 
 **Exemplo: Gráfico elaborado com R - Proposta Orçamentária PMSP 2019 - 10 maiores orçamentos** 
 
-&lt;img src="https://beatrizmilz.github.io/DadosExecucaoOrcamentariaPMSP/proposta2019_files/figure-html/unnamed-chunk-5-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/PMSP-chunk-5-1.png" width="90%" style="display: block; margin: auto;" /&gt;
 Fonte: [Explorando o orçamento da Prefeitura Municipal de São Paulo](https://beatrizmilz.github.io/DadosExecucaoOrcamentariaPMSP/proposta2019.html)
 
 
@@ -220,78 +250,29 @@ Fonte: [Explorando o orçamento da Prefeitura Municipal de São Paulo](https://b
 
 **Exemplo: Gráfico elaborado com R - Execução Orçamentária PMSP na função Gestão Ambiental** 
 
-&lt;img src="https://beatrizmilz.github.io/DadosExecucaoOrcamentariaPMSP/gestaoambiental_files/figure-html/unnamed-chunk-5-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/PMSP-chunk-5-2.png" width="90%" style="display: block; margin: auto;" /&gt;
 Fonte: [Explorando o orçamento da Prefeitura Municipal de São Paulo](https://beatrizmilz.github.io/DadosExecucaoOrcamentariaPMSP/gestaoambiental.html)
 
 
 ---
 
-**Exemplo: Gráfico elaborado com R - Material Particulado 10 - Dados CETESB - RPollution;** 
+**Exemplo: Gráfico elaborado com R - Material Particulado 10 - Dados CETESB - RPollution** 
 
-&lt;img src="https://www.rpollution.com/blog/pm-em-sp_files/figure-html/unnamed-chunk-6-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/PMSP-chunk-6-1.png" width="90%" style="display: block; margin: auto;" /&gt;
 Fonte: [Rpollution](https://www.rpollution.com/)
 
 ---
 
-**Exemplo: Frequência de Palavras - TESE Doutorado PROCAM/USP Ana Lucia Spinola;** 
+**Exemplo: Frequência de Palavras - TESE Doutorado PROCAM/USP Ana Lucia Spinola** 
 
 &lt;img src="img/ana-lu-freq.png" width="90%" style="display: block; margin: auto;" /&gt;
 Fonte: [Ana Lu Spinola](https://analuspi.github.io/Text-Mining/)
 ---
 
-**Exemplo: BIGRAM - TESE Doutorado PROCAM/USP Ana Lucia Spinola;** 
+**Exemplo: BIGRAM - TESE Doutorado PROCAM/USP Ana Lucia Spinola** 
 
 &lt;img src="img/bigram-ana-lu.png" width="90%" style="display: block; margin: auto;" /&gt;
 Fonte: [Ana Lu Spinola](https://analuspi.github.io/Text-Mining/)
-
----
-
-# Antes de começar, criar um projeto
-
-&gt; Ao realizar um projeto, sempre organizar os arquivos em uma **pasta** que conterá todos os arquivos de seu projeto. 
-
-&gt; Nomear novos arquivos com **nomes descritivos**
-
-
-&lt;img src="img/organização_arquivos.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-# Boas práticas para organizar seu projeto
-
-&gt; **Tratar dados como somente leitura: **esse é provavelmente o objetivo mais importante da configuração de um projeto. Os dados geralmente consomem tempo e/ou são caros para coletar. Trabalhar com eles interativamente (por exemplo, no Excel), onde eles podem ser modificados, significa que você nunca tem certeza de onde os dados vieram, ou como eles foram modificados desde a coleta. Portanto, é uma boa ideia tratar seus dados como “somente leitura”.
-
-&gt; **Qualquer coisa gerada pelos seus scripts deve ser tratada como descartável: **todos devem poder ser criados novamente a partir dos seus scripts. Existem várias maneiras diferentes de gerenciar essa saída. Acho útil ter uma pasta de saída com subdiretórios diferentes para cada análise separada. Isso fica mais fácil depois, já que muitas das análises são exploratórias e não acabam sendo usadas no projeto final, e algumas análises são compartilhadas entre os projetos.
-
-Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
----
-
-# Criando um projeto
-
-```r
-# acho que esse criando m projeto poderia ser lá embaixo quando dar os desafios. O primeiro desafio seria criar um projeto (o que vcs acham?)
-```
-
-1. Clique na opção **“File”** do menu, e então em **“New Project”**.
-
-1.  Clique em **“New Directory”**.
-
-1.  Clique em **“New Project”**.
-
-1.  Escreva o nome do diretório (pasta) onde deseja manter seu projeto, ex “my_project”.
-
-1.  Clique no botão **“Create Project”**.
-
-
-OBS: Crie um novo script para escrever seus códigos!
-  **File -&gt; New File -&gt; RScript **
-
----
-
-# Projetos
-
-&gt; "Um bom layout de projeto facilitará sua vida: ajudará a garantir a integridade de seus dados; facilita o compartilhamento de seu código com outra pessoa (colega de laboratório, colaborador ou orientador); ele permite que você facilmente faça o upload do seu código com a submissão do seu manuscrito; torna-se mais fácil recuperar o projeto depois de um intervalo. "
-
-Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
 
 ---
 
@@ -319,42 +300,42 @@ Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/01-rstudio
 
 ---
 # RStudio
-&lt;img src="img/haydee1.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/haydee1.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-&lt;img src="img/haydee2.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/haydee2.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-&lt;img src="img/haydee3.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/haydee3.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-&lt;img src="img/haydee4.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/haydee4.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-&lt;img src="img/haydee5.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/haydee5.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-&lt;img src="img/haydee6.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/haydee6.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-&lt;img src="img/haydee7.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/haydee7.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 ---
 # RStudio
-&lt;img src="img/haydee8.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/haydee8.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 Fonte: [Haydee Svab](https://www.slideshare.net/mobile/haydeesvab/anlise-crtica-de-dados-primeiros-passos-com-r)
 
 
@@ -372,6 +353,73 @@ help(sum)
 
 - Se a dúvida permanecer, procure no [Stack OverFlow](https://stackoverflow.com/) ou Google.
 - E se ainda tiver dúvidas, pergunte para a comunidade (há grupos no Telegram e outras redes sociais).
+
+---
+
+class: center, middle
+# Boas práticas iniciais para organizar seu projeto
+
+---
+
+&gt; **Tratar dados como somente leitura:** esse é provavelmente o objetivo mais importante da configuração de um projeto. Os dados geralmente consomem tempo e/ou são caros para coletar. Trabalhar com eles interativamente (por exemplo, no Excel), onde eles podem ser modificados, significa que você nunca tem certeza de onde os dados vieram, ou como eles foram modificados desde a coleta. Portanto, é uma boa ideia tratar seus dados como “somente leitura”.
+
+
+&gt; **Qualquer coisa gerada pelos seus scripts deve ser tratada como descartável:** todos devem poder ser criados novamente a partir dos seus scripts. Existem várias maneiras diferentes de gerenciar essa saída. Acho útil ter uma pasta de saída com subdiretórios diferentes para cada análise separada. Isso fica mais fácil depois, já que muitas das análises são exploratórias e não acabam sendo usadas no projeto final, e algumas análises são compartilhadas entre os projetos.
+
+Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
+
+---
+
+&gt; **Os nomes das suas variáveis devem fazer sentido:** Ao nomear suas variáveis, dê nomes que tenham significado para seres humanos. Pense que o código que você escreve hoje deve ser claro para você daqui 1 ano e também deve ser claro para algum(a) colega seu(ua).
+
+&gt; **Comente bem o seu código:** É possível fazer comentários usando o símbolo '#'. É sempre bom explicar o que uma variável armazena, o que uma função faz, porque alguns parâmetros são passados para uma determinada função, qual é o objetivo de um trecho de código, etc.
+
+&gt; **Evite linhas de código muito longas:** Usar linhas de código mais curtas ajuda na leitura do código.
+
+&gt; **Escreva um código organizado:** Por exemplo, adote um padrão no uso de minúsculas e maiúsculas, uma lógica única na organização de pastas e arquivos, pode ser adotada uma breve descrição (como comentário) indicando o que um determinado script faz.
+
+&gt; **Carregue todos os pacotes que irá usar sempre no início do arquivo:** Quando alguém abrir o seu código será fácil identificar quais são os pacotes que devem ser instalados e quais dependências podem existir.
+
+&gt; **Evite referência de caminho que considere seu computador ou usuário:** Faça referência ao caminho do projeto.
+
+---
+
+# Antes de começar: o projeto
+
+&gt; Ao realizar um projeto, sempre organizar os arquivos em uma **pasta** que conterá todos os arquivos de seu projeto. 
+
+&gt; Nomear novos arquivos com **nomes descritivos**
+
+
+&lt;img src="img/organização_arquivos.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Projetos
+
+&gt; "Um bom layout de projeto facilitará sua vida: ajudará a garantir a integridade de seus dados; facilita o compartilhamento de seu código com outra pessoa (colega de laboratório, colaborador ou /orientador); ele permite que você facilmente faça o upload do seu código com a submissão do seu manuscrito; torna-se mais fácil recuperar o projeto depois de um intervalo. "
+
+Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/index.html)
+
+---
+
+# Criando um projeto
+
+
+1. Clique na opção **“File”** do menu, e então em **“New Project”**.
+
+1.  Clique em **“New Directory”**.
+
+1.  Clique em **“New Project”**.
+
+1.  Escreva o nome do diretório (pasta) onde deseja manter seu projeto, ex “my_project”.
+
+1.  Clique no botão **“Create Project”**.
+
+
+OBS: Crie um novo script para escrever seus códigos!
+  **File -&gt; New File -&gt; RScript **
+
 ---
 
 # Atalhos importantes
