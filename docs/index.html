@@ -448,6 +448,8 @@ class: center, middle
 ---
 # R como calculadora
 
+
+
 - O R permite realizar muitas operações aritméticas em seu console!
 
 
@@ -526,7 +528,7 @@ A ordem matemática das operações também vale no R.
 
 
 ```r
-sin(1)  # trigonometry functions
+sin(1)  # funções trigonométricas
 ```
 
 ```
@@ -534,7 +536,7 @@ sin(1)  # trigonometry functions
 ```
 
 ```r
-log(1)  # natural logarithm
+log(1)  # logaritmo natural (base e)
 ```
 
 ```
@@ -542,7 +544,7 @@ log(1)  # natural logarithm
 ```
 
 ```r
-log10(10) # base-10 logarithm
+log10(10) # logaritmo na base 10
 ```
 
 ```
@@ -562,7 +564,9 @@ Fonte: [SW Carpentry](http://swcarpentry.github.io/r-novice-gapminder/01-rstudio
 ---
 # Desafio 1
 
-Daenerys quer conquistar uma aldeia com os seus dois dragões. Cada dragão mata 32 ovelhas e 90 pessoas a cada 1 hora. Considerando que ela atacará a aldeia por 4h, quantas ovelhas e pessoas ao todo os dragões irão assassinar após o ataque?
+Daenerys quer conquistar uma aldeia com os seus dois dragões. 
+Cada dragão mata 32 ovelhas e 90 pessoas a cada 1 hora. 
+Considerando que ela atacará a aldeia por 4h, quantas ovelhas e pessoas ao todo os dragões irão assassinar após o ataque?
 
 ---
 
@@ -652,17 +656,17 @@ ativo
 ---
 
 # Desafio 2
-1) Crie variáveis para os casos abaixo (cuidado com os nomes dados! Usaremos nos próximos desafios!): 
+Crie variáveis para os casos abaixo (cuidado com os nomes dados! Usaremos nos próximos desafios!): 
 - DC com valor 42
-- Marvel com valor de 23
-- Herói com valor de Superman
-- Vingadores com valor de 63
+- Marvel com valor 23
+- Herói com valor Superman
+- Vingadores com valor 63
 
 ---
 
 # Desafio 2 - Resposta
 
-1) 1) Crie variáveis para os casos abaixo (cuidado com os nomes dados! Usaremos nos próximos desafios!): 
+Crie variáveis para os casos abaixo (cuidado com os nomes dados! Usaremos nos próximos desafios!): 
 
 
 ```r
@@ -703,41 +707,12 @@ vingadores
 
 ---
 # Classes Básicas ou Atômicas do R
-- **Character**: texto &lt;br&gt;&lt;/br&gt;
 - **Integer**: números inteiros &lt;br&gt;&lt;/br&gt;
 - **Numeric**: números racionais &lt;br&gt;&lt;/br&gt;
 - **Complex**: números complexos (raramente usados para Análise de Dados) &lt;br&gt;&lt;/br&gt;
 - **Logical**: TRUE, FALSE ou NA &lt;br&gt;&lt;/br&gt;
-- **Factor**: variavéis categóricas
-
----
-
-# Exemplos: character
-
-
-```r
-"escola"
-```
-
-```
-## [1] "escola"
-```
-
-```r
-"2019"
-```
-
-```
-## [1] "2019"
-```
-
-```r
-"I love pinschers."
-```
-
-```
-## [1] "I love pinschers."
-```
+- **Factor**: variavéis categóricas &lt;br&gt;&lt;/br&gt;
+- **Character**: texto &lt;br&gt;&lt;/br&gt;
 
 ---
 
@@ -745,7 +720,7 @@ vingadores
 
 
 ```r
-10L #Um número inteiro pode ser representado acompanhado de um L
+10L # Um número inteiro pode ser representado acompanhado de um L
 ```
 
 ```
@@ -848,7 +823,70 @@ Essa classe de dados pode ser trabalhada com o pacote **forcats**.
 
 ---
 
-# Função class: 
+# Exemplos: character
+
+
+```r
+"escola"
+```
+
+```
+## [1] "escola"
+```
+
+```r
+"2019"
+```
+
+```
+## [1] "2019"
+```
+
+```r
+"I love pinschers."
+```
+
+```
+## [1] "I love pinschers."
+```
+
+---
+
+
+# Operações simples com strings
+
+
+```r
+animal &lt;- "Camaleao"
+#letras maiúsculas
+toupper(animal)
+```
+
+```
+## [1] "CAMALEAO"
+```
+
+```r
+#letras minúsculas
+tolower(animal)
+```
+
+```
+## [1] "camaleao"
+```
+
+```r
+#número de caracteres
+nchar(animal)
+```
+
+```
+## [1] 8
+```
+
+---
+
+# Função class
 
 A função **class** mostra a classe de um objeto.
 
@@ -902,46 +940,9 @@ class(passou_enem)
 ```
 ## [1] "logical"
 ```
----
-# Desafio 3 - Trabalhando com as classes
-
-
-
 
 ---
-# Operações simples com strings
-
-
-```r
-animal &lt;- "Camaleao"
-#letras maiúsculas
-toupper(animal)
-```
-
-```
-## [1] "CAMALEAO"
-```
-
-```r
-#letras minúsculas
-tolower(animal)
-```
-
-```
-## [1] "camaleao"
-```
-
-```r
-#número de caracteres
-nchar(animal)
-```
-
-```
-## [1] 8
-```
-
----
-# Conversão de classes: 
+# Conversão de classes
 
 Podemos forçar um objeto a ser de uma classe específica com as funções:  
 - as.character() &lt;br&gt;&lt;/br&gt;
@@ -951,7 +952,8 @@ Podemos forçar um objeto a ser de uma classe específica com as funções:
 
 ---
 
-# Exemplo de conversão de classes
+# Conversão de classes
+** Exemplos de conversão de classes **
 
 
 ```r
@@ -990,7 +992,9 @@ class(vetor_numeric)
 
 ---
 
-# Exemplo de conversão de classes
+# Conversão de classes
+** Exemplos de conversão de classes **
+
 
 
 ```r
@@ -1031,14 +1035,16 @@ class(vetor_logical)
 
 # Desafio 3
 
-1) Converta a variável Vingadores criada anteriormente para character. Agora cheque sua classe. O que acontece com seu valor?
+Converta a variável Vingadores criada anteriormente para character. Agora cheque sua classe. O que acontece com seu valor?
 
 
 ---
 
 # Desafio 3 - Resposta
 
-1) Converta a variável Vingadores criada anteriormente para character. Agora cheque sua classe. O que acontece com seu valor? 
+Converta a variável Vingadores criada anteriormente para character. 
+Agora cheque sua classe. 
+O que acontece com seu valor? 
 
 
 ```r
@@ -1050,7 +1056,7 @@ as.character(vingadores)
 ```
 
 ---
-# Tipos de variáveis:
+# Tipos de variáveis
 
 - **Vector**: armazena elementos de mesma classe. &lt;br&gt;&lt;/br&gt;   
 - **Matrix**: vetores de duas dimensões que armazenam elementos de mesma classe. &lt;br&gt;&lt;/br&gt;
@@ -1064,8 +1070,8 @@ as.character(vingadores)
 A função c() cria um vetor.
 
 ```r
-semestre1 &lt;- c("janeiro", "fevereiro", "março", "abril", "maio", "junho")
-notas_alunos &lt;- c(5, 6.5, 10, 0.5, 2.75, 3, 9)
+semestre1 &lt;- c("janeiro", "fevereiro", "março", "abril", "maio")
+notas_alunos &lt;- c(5, 6.5, 10, 0.5, 2.75)
 ```
 
 É possível realizar operações com vetores.
@@ -1073,7 +1079,7 @@ notas_alunos &lt;- c(5, 6.5, 10, 0.5, 2.75, 3, 9)
 
 ```r
 vetor1 &lt;- 1:5
-vetor1 / 5   #Objeto vetor1 dividido por 5
+vetor1 / 5   # Objeto vetor1 dividido por 5
 ```
 
 ```
@@ -1188,7 +1194,46 @@ head(df)
 
 - names(): mostra os nomes das colunas.
 
-- glimpse(): mostra várias informações sobre o Tibble, como o número de observações (linhas) e variáveis (colunas), o nome das colunas e o tipo delas.
+- glimpse(): mostra várias informações, como o número de observações (linhas) e variáveis (colunas), o nome das colunas e o tipo delas.
+
+---
+
+# Desafio 4
+
+Quantas observações tem o data.frame iris?&lt;br&gt;&lt;/br&gt;
+Quais são as variáveis do data.frame iris?
+
+---
+
+# Desafio 4 - Resposta
+
+Quantas observações tem o data.frame iris?&lt;br&gt;&lt;/br&gt;
+
+```r
+tail(df)
+```
+
+```
+##     Sepal.Length Sepal.Width Petal.Length Petal.Width   Species
+## 145          6.7         3.3          5.7         2.5 virginica
+## 146          6.7         3.0          5.2         2.3 virginica
+## 147          6.3         2.5          5.0         1.9 virginica
+## 148          6.5         3.0          5.2         2.0 virginica
+## 149          6.2         3.4          5.4         2.3 virginica
+## 150          5.9         3.0          5.1         1.8 virginica
+```
+Quais são as variáveis do data.frame iris?
+
+
+```r
+names(df)
+```
+
+```
+## [1] "Sepal.Length" "Sepal.Width"  "Petal.Length" "Petal.Width" 
+## [5] "Species"
+```
+
 
 ---
 
@@ -1270,7 +1315,8 @@ Exemplos:
 ---
 ## Operadores Lógicos
 
-- E: **&amp;** -&gt; Será verdadeiro se os dois forem TRUE 
+- E: **&amp;** &lt;br&gt;&lt;/br&gt;
+Será verdadeiro se os dois forem TRUE 
 
 
 ```r
@@ -1295,7 +1341,8 @@ y &lt;- 2
 ---
 ## Operadores Lógicos
 
-- OU: **|** -&gt; Será verdadeiro se um dos dois forem TRUE&lt;br&gt;&lt;/br&gt;
+- OU: **|**&lt;br&gt;&lt;/br&gt;
+Será verdadeiro se um dos dois forem TRUE&lt;br&gt;&lt;/br&gt;
 
 
 ```r
@@ -1403,25 +1450,83 @@ NA == NA
 
 # Índices 
 
---- 
+**Início:** o início da contagem é 1&lt;br&gt;&lt;/br&gt;
+
+*Vetores*: característica linear
+
+
+```r
+v &lt;- c(10:25)
+
+v[2]
+```
+
+```
+## [1] 11
+```
+*Data Frames*: o primeiro número indica a linha (observação) e o segundo a coluna (variável)
+
+
+```r
+df[145, 2]
+```
+
+```
+## [1] 3.3
+```
+
+---
 
 # Desafio 5
 
-1)
+1) No data.frame iris, testar se o Petal.Lenght da 5ª observação é igual ao da 6ª observação. E se o Petal.Lenght da 5ª observação é igual ao da 7ª observação.&lt;br&gt;&lt;/br&gt;
 
-2)
+
+2) A 10ª observação tem Petal.Width maior ou menor que a seguinte (11a)? 
+E qual é a espécie da menor?
 
 ---
 
 # Desafio 5 - Resposta
 
-1) 
+1) No data.frame iris, testar se o Petal.Lenght da 5ª observação é igual ao da 6ª observação. E se o Petal.Lenght da 5ª observação é igual ao da 7ª observação.
+
+```r
+df[5,3]==df[6,3]
+```
+
+```
+## [1] FALSE
+```
+
+```r
+df[5,3]==df[7,3]
+```
+
+```
+## [1] TRUE
+```
+
+2) A 10ª observação tem Petal.Width maior ou menor que a seguinte (11a)? 
+E qual é a espécie da menor?
 
 
+```r
+df[10,4] &lt; df[11,4] # Petal.Width da 10ª linha é menor que da 11ª
+```
 
-2) 
+```
+## [1] TRUE
+```
 
+```r
+df[10,5]
+```
 
+```
+## [1] setosa
+## Levels: setosa versicolor virginica
+```
 
 ---
 
@@ -1483,7 +1588,9 @@ devtools::install_github("tidyverse/dplyr")
 
 # Para aprender mais
 
+- [Repositório RLadies São Paulo](https://github.com/rladies/meetup-presentations_sao-paulo) &lt;br&gt;&lt;/br&gt;
 - [Livro R for Data Science](https://r4ds.had.co.nz) &lt;br&gt;&lt;/br&gt;
+- [Software Carpentry](https://software-carpentry.org/lessons/) &lt;br&gt;&lt;/br&gt;
 - [Material do Curso-R](https://www.curso-r.com/material/) &lt;br&gt;&lt;/br&gt;
 - [R-Bloggers](https://www.r-bloggers.com) &lt;br&gt;&lt;/br&gt;
 
@@ -1496,6 +1603,8 @@ devtools::install_github("tidyverse/dplyr")
 - https://www.curso-r.com/material/
 
 - https://www.tidyverse.org
+
+- https://software-carpentry.org/lessons/
 
 - http://brunaw.com/slides/rladies-sp/13-08-2018/meetup.html#1
 
@@ -1511,8 +1620,6 @@ devtools::install_github("tidyverse/dplyr")
 
 - http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html
 
-A apresentação foi feita em [xaringan](https://github.com/yihui/xaringan), um pacote do R! :)
-
 ---
 
 class: middle
@@ -1520,11 +1627,17 @@ class: middle
 
 ---
 
-class: middle, inverse
+class:  center, middle
+
+Esta apresentação foi feita em [xaringan](https://github.com/yihui/xaringan), um pacote do R! :)
 
 # Muito obrigada!
 
-R-Ladies São Paulo
+## R-Ladies São Paulo
+
+Haydée Svab [hsvab@hsvab.eng.br]  &lt;br&gt;&lt;/br&gt;
+Mariana Dias Guilardi [] &lt;br&gt;&lt;/br&gt;
+Patricia Guisordi [] &lt;br&gt;&lt;/br&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="libs/remark-latest.min.js"></script>
