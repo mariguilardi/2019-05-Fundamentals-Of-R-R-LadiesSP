@@ -566,7 +566,7 @@ Daenerys quer conquistar uma aldeia com os seus dois dragões. Cada dragão mata
 - Uma variável é um espaço de memória que retém e representa um valor ou expressão
 
 ```{r echo=FALSE, fig.align='center', out.width="40%"}
-knitr::include_graphics("memoria.jpeg")
+knitr::include_graphics("ran.jpg")
 ```
 ---
 
@@ -1182,5 +1182,7 @@ Esta apresentação foi feita em [xaringan](https://github.com/yihui/xaringan), 
 ## R-Ladies São Paulo
 
 Haydée Svab [hsvab@hsvab.eng.br]  <br></br>
-Mariana Dias Guilardi [] <br></br>
-Patricia Guisordi [] <br></br>
+Mariana Dias Guilardi [diasgmariana@gmail.com] <br></br>
+Patricia Guisordi [patriciacucio@gmail.com] <br></br>
+
+Acesse nosso [GitHub](https://github.com/rladies/meetup-presentations_sao-paulo) para acessar outros conteúdos! 
