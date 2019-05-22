@@ -473,6 +473,7 @@ OBS: Crie um novo script para escrever seus códigos!
 Os atalhos facilitam. Veja os principais:<br></br>
 
 - CTRL + ENTER: roda a linha selecionada no script.<br></br>
+
 - ALT + **-**: (<-) sinal de atribuição.<br></br>
 
 ---
@@ -579,7 +580,7 @@ knitr::include_graphics("img/ran.jpg")
 
 ---
 
-# Exemplos de objetos e atribuição de valores
+# Exemplos de variáveis e atribuição de valores
 
 ```{r}
 nome_empregado <- "Tom Cruise de Souza e Silva"
@@ -593,7 +594,7 @@ ativo
 ```
 
 ---
-# Nomes de objetos e variáveis
+# Nomes de variáveis
 - Os nomes devem começar com uma letra. Podem conter letras, números, _ e .<br></br>
 
 - Recomendação do autor do livro R For Data Science: **usar_snake_case**, ou seja, palavras escritas em minúsculo separadas pelo underscore (_).<br></br>
@@ -679,7 +680,7 @@ fator <- as.factor(escolaridade)
 fator
 ```
 
-A função as.factor() criou um objeto do tipo factor.
+A função as.factor() criou uma variável do tipo factor.
 
 Na linha *Levels* aparecem os rótulos do fator.
 
@@ -712,7 +713,7 @@ nchar(animal)
 
 # Função class
 
-A função **class** mostra a classe de um objeto.
+A função **class** mostra a classe de uma variável.
 
 ```{r}
 nome_filme <- "Bohemian Rhapsody"
@@ -737,7 +738,7 @@ class(passou_enem)
 ---
 # Conversão de classes
 
-Podemos forçar um objeto a ser de uma classe específica com as funções:  
+Podemos forçar uma variável a ser de uma classe específica com as funções:  
 - as.character() <br></br>
 - as.numeric() <br></br>
 - as.integer() <br></br>
@@ -871,9 +872,6 @@ df <- iris
 
 head(df)
 ```
-
-**Tibble** é uma releitura moderna do data.frame.
-
 
 ---
 

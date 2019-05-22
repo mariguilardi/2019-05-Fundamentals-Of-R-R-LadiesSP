@@ -426,6 +426,7 @@ OBS: Crie um novo script para escrever seus códigos!
 Os atalhos facilitam. Veja os principais:&lt;br&gt;&lt;/br&gt;
 
 - CTRL + ENTER: roda a linha selecionada no script.&lt;br&gt;&lt;/br&gt;
+
 - ALT + **-**: (&lt;-) sinal de atribuição.&lt;br&gt;&lt;/br&gt;
 
 ---
@@ -603,7 +604,7 @@ Daenerys quer conquistar uma aldeia com os seus três dragões. Cada dragão mat
 
 ---
 
-# Exemplos de objetos e atribuição de valores
+# Exemplos de variáveis e atribuição de valores
 
 
 ```r
@@ -643,7 +644,7 @@ ativo
 ```
 
 ---
-# Nomes de objetos e variáveis
+# Nomes de variáveis
 - Os nomes devem começar com uma letra. Podem conter letras, números, _ e .&lt;br&gt;&lt;/br&gt;
 
 - Recomendação do autor do livro R For Data Science: **usar_snake_case**, ou seja, palavras escritas em minúsculo separadas pelo underscore (_).&lt;br&gt;&lt;/br&gt;
@@ -802,7 +803,7 @@ fator
 ## Levels: Fundamental Médio Superior
 ```
 
-A função as.factor() criou um objeto do tipo factor.
+A função as.factor() criou uma variável do tipo factor.
 
 Na linha *Levels* aparecem os rótulos do fator.
 
@@ -873,7 +874,7 @@ nchar(animal)
 
 # Função class
 
-A função **class** mostra a classe de um objeto.
+A função **class** mostra a classe de uma variável.
 
 
 ```r
@@ -929,7 +930,7 @@ class(passou_enem)
 ---
 # Conversão de classes
 
-Podemos forçar um objeto a ser de uma classe específica com as funções:  
+Podemos forçar uma variável a ser de uma classe específica com as funções:  
 - as.character() &lt;br&gt;&lt;/br&gt;
 - as.numeric() &lt;br&gt;&lt;/br&gt;
 - as.integer() &lt;br&gt;&lt;/br&gt;
@@ -1168,9 +1169,6 @@ head(df)
 ## 5          5.0         3.6          1.4         0.2  setosa
 ## 6          5.4         3.9          1.7         0.4  setosa
 ```
-
-**Tibble** é uma releitura moderna do data.frame.
-
 
 ---
 
