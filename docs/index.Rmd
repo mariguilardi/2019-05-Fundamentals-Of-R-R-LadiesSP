@@ -509,6 +509,7 @@ class: center, middle
 7 / 5    # divisão
 ```
 
+Fonte: [Curso Introdução ao R - Fatec](https://github.com/MaryMS/2018-11-R-Course-FatecZS)
 ---
 
 # R como calculadora
@@ -570,13 +571,13 @@ knitr::include_graphics("img/ran.jpg")
 
 # Atribuindo valor a uma variável no R
 
-- Para atribuir um valor a um objeto no R, utilizamos o operador **<-**  <br></br>
+- Para atribuir um valor a uma variável no R, utilizamos o operador **<-**  <br></br>
 
 - O atalho ALT + **-** gera o operador **<-** <br></br>
 
-- Todas as declarações R onde são criados objetos atribuindo valores a eles, tem a mesma forma:  
+- Todas as declarações R onde são criadas variáveis atribuindo valores a elas, tem a mesma forma:  
 
-<center><b>nome_do_objeto <- valor<b></center>
+<center><b>nome_da_variável <- valor<b></center>
 
 ---
 
@@ -599,30 +600,43 @@ ativo
 
 - Recomendação do autor do livro R For Data Science: **usar_snake_case**, ou seja, palavras escritas em minúsculo separadas pelo underscore (_).<br></br>
 
-- O R é *case sensitive*, isto é, faz a diferenciação entre as letras minúsculas e maiúsculas. Portanto, um objeto chamado *teste* é diferente de um outro objeto chamado *Teste*.
+- O R é *case sensitive*, isto é, faz a diferenciação entre as letras minúsculas e maiúsculas. Portanto, uma variável chamado *teste* é diferente de uma outra variável chamada *Teste*.
 
 ---
 
 # Desafio 2
-Crie variáveis para os casos abaixo:
+1) Crie variáveis para os casos abaixo:
 
 - DC com valor Tem muitos heróis
-- Pi com valor 3,1415
-- Vingadores com valor 63
+- Conta com valor 40,50
+- Dinheiro com valor 60
+
+2) O que acontece se você subtrair a variável conta da variável dinheiro?
 
 ---
 
 # Desafio 2 - Resposta
 
-Crie variáveis para os casos abaixo: 
+1) Crie variáveis para os casos abaixo: 
 
 ```{r}
 dc <- "Tem muitos herois"
 dc
-pi <- 3.1415
-pi
-vingadores <- 63
-vingadores
+conta <- 40.50
+conta
+dinheiro <- 60
+dinheiro
+
+```
+
+---
+# Desafio 2 - Resposta
+2) O que acontece se você subtrair a variável conta da variável dinheiro?
+
+```{r}
+
+dinheiro - conta
+
 ```
 
 ---
@@ -780,18 +794,16 @@ class(vetor_logical)
 
 # Desafio 3
 
-Converta a variável Vingadores criada anteriormente para character. Agora cheque sua classe. O que acontece com seu valor? Como explica o que aconteceu?
+Converta a variável Conta criada anteriormente para character. Agora cheque sua classe. O que acontece com seu valor? Como explica o que aconteceu?
 
 ---
 
 # Desafio 3 - Resposta
 
-Converta a variável Vingadores criada anteriormente para character. 
-Agora cheque sua classe. 
-O que acontece com seu valor? 
+Converta a variável Conta criada anteriormente para character. Agora cheque sua classe. O que acontece com seu valor? 
 
 ```{r}
-as.character(vingadores)
+as.character(conta)
 ```
 
 ---
@@ -818,7 +830,7 @@ notas_alunos <- c(5, 6.5, 10, 0.5, 2.75)
 
 ```{r}
 vetor1 <- 1:5
-vetor1 / 5   # Objeto vetor1 dividido por 5
+vetor1 / 5   # variável vetor1 dividido por 5
 ```
 
 ```{r}
@@ -836,7 +848,7 @@ primeira_matriz <- matrix(1:8, nrow = 2, ncol = 4)
 primeira_matriz
 ```
 
-A funçăo dim() retorna a dimensăo do objeto (linha e coluna).
+A funçăo dim() retorna a dimensăo do variável (linha e coluna).
 ```{r}
 dim(primeira_matriz)
 ```
@@ -851,7 +863,7 @@ wizards <- list("Harry Potter", 18, TRUE, c("Hermione Granger", "Rony Weasley"))
 class(wizards)
 ```
 
-A função is.list() verifica se o objeto é ou não uma lista.
+A função is.list() verifica se o variável é ou não uma lista.
 
 ```{r}
 harry_friends <- c("Hermione Granger", "Rony Weasley")
@@ -1019,7 +1031,7 @@ NA == NA
 
 <br></br>
 
-**is.na()** é a função que testa se um objeto é NA.
+**is.na()** é a função que testa se uma variável é NA.
 
 ---
 
