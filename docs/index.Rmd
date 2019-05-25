@@ -515,7 +515,7 @@ class: center, middle
 ```{r}
 9 %% 4   # resto da divisão de 9 por 4
 
-7 %/% 4  # parte inteira da divisão de 4 por 3
+7 %/% 4  # parte inteira da divisão de 7 por 3
 
 8 ^ 2    # potenciação
 
@@ -640,7 +640,7 @@ dinheiro - conta
 ---
 # Classes Básicas ou Atômicas do R
 
-São os tipos básicos de dados que podem ser representados na linguagem R. É neles que guardamos as informações que necessitamos pra um algoritmo.
+São os tipos básicos de dados que podem ser representados na linguagem R. É neles que guardamos as informações que necessitamos para um algoritmo.
 
 - **Integer**: números inteiros <br></br>
 - **Numeric**: números racionais <br></br>
@@ -778,11 +778,6 @@ class(vetor_numeric)
 
 
 ```{r}
-vetor_character <- as.character(vetor)
-vetor_character
-class(vetor_character)
-
-
 vetor_logical <- as.logical(vetor)
 vetor_logical
 class(vetor_logical)
