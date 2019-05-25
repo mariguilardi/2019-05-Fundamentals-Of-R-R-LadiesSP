@@ -518,7 +518,7 @@ class: center, middle
 ```{r}
 9 %% 4   # resto da divisão de 9 por 4
 
-7 %/% 4  # parte inteira da divisão de 7 por 3
+7 %/% 4  # parte inteira da divisão de 7 por 4
 
 8 ^ 2    # potenciação
 
