@@ -285,6 +285,7 @@ class: center, middle
 **RStudio** é o IDE (integrated development environment) da Linguagem R, ou seja, o ambiente que utilizamos para editar e executar os códigos em R. Tem quatro áreas, conforme a figura abaixo:
 
 &lt;img src="img/RStudio_screen.png" width="90%" style="display: block; margin: auto;" /&gt;
+
 Fonte: [Curso Introdução ao R - Fatec](https://github.com/MaryMS/2018-11-R-Course-FatecZS)
 
 ---
@@ -449,6 +450,8 @@ class: center, middle
 ---
 # R como calculadora
 
+
+
 - O R permite realizar muitas operações aritméticas em seu console!
 
 
@@ -567,20 +570,6 @@ Daenerys quer conquistar uma aldeia com os seus três dragões. Cada dragão mat
 
 ---
 
-# Desafio 1 - Resposta
-
-Daenerys quer conquistar uma aldeia com os seus três dragões. Cada dragão mata 32 ovelhas e 90 pessoas a cada 1 hora. Considerando que ela atacará a aldeia por 4h, quantas ovelhas e pessoas ao todo os dragões irão assassinar após o ataque? 
-
-
-```r
-3*32*4 + 3*90*4
-```
-
-```
-## [1] 1464
-```
-
----
 # O que é uma variável?
 - Ao se desenvolver um projeto, você irá trabalhar com diversos tipos de arquivos, além de informações que serão repetidas ao longo do script.
 
@@ -663,52 +652,6 @@ ativo
 
 ---
 
-# Desafio 2 - Resposta
-
-1) Crie variáveis para os casos abaixo: 
-
-
-```r
-dc &lt;- "Tem muitos herois"
-dc
-```
-
-```
-## [1] "Tem muitos herois"
-```
-
-```r
-conta &lt;- 40.50
-conta
-```
-
-```
-## [1] 40.5
-```
-
-```r
-dinheiro &lt;- 60
-dinheiro
-```
-
-```
-## [1] 60
-```
-
----
-# Desafio 2 - Resposta
-2) O que acontece se você subtrair a variável conta da variável dinheiro?
-
-
-```r
-dinheiro - conta
-```
-
-```
-## [1] 19.5
-```
-
----
 # Classes Básicas ou Atômicas do R
 
 São os tipos básicos de dados que podem ser representados na linguagem R. É neles que guardamos as informações que necessitamos pra um algoritmo.
@@ -1039,20 +982,6 @@ Converta a variável Conta criada anteriormente para character. Agora cheque sua
 
 ---
 
-# Desafio 3 - Resposta
-
-Converta a variável Conta criada anteriormente para character. Agora cheque sua classe. O que acontece com seu valor? 
-
-
-```r
-as.character(conta)
-```
-
-```
-## [1] "40.5"
-```
-
----
 # Tipos de variáveis
 
 Os tipos das variáveis são definidos a partir dos valores armazenados nela:
@@ -1198,38 +1127,6 @@ head(df)
 
 Quantas observações tem o data.frame iris?&lt;br&gt;&lt;/br&gt;
 Quais são as variáveis do data.frame iris?
-
----
-
-# Desafio 4 - Resposta
-
-Quantas observações tem o data.frame iris?&lt;br&gt;&lt;/br&gt;
-
-```r
-tail(df)
-```
-
-```
-##     Sepal.Length Sepal.Width Petal.Length Petal.Width   Species
-## 145          6.7         3.3          5.7         2.5 virginica
-## 146          6.7         3.0          5.2         2.3 virginica
-## 147          6.3         2.5          5.0         1.9 virginica
-## 148          6.5         3.0          5.2         2.0 virginica
-## 149          6.2         3.4          5.4         2.3 virginica
-## 150          5.9         3.0          5.1         1.8 virginica
-```
-Quais são as variáveis do data.frame iris?
-
-
-```r
-names(df)
-```
-
-```
-## [1] "Sepal.Length" "Sepal.Width"  "Petal.Length" "Petal.Width" 
-## [5] "Species"
-```
-
 
 ---
 
@@ -1480,49 +1377,6 @@ df[145, 2]
 
 2) A 10ª observação tem Petal.Width maior ou menor que a seguinte (11ª)? 
 E qual é a espécie da menor?
-
----
-
-# Desafio 5 - Resposta
-
-1) No data.frame iris, testar se o Petal.Lenght da 5ª observação é igual ao da 6ª observação. E se o Petal.Lenght da 5ª observação é igual ao da 7ª observação.
-
-```r
-df[5,3]==df[6,3]
-```
-
-```
-## [1] FALSE
-```
-
-```r
-df[5,3]==df[7,3]
-```
-
-```
-## [1] TRUE
-```
-
-2) A 10ª observação tem Petal.Width maior ou menor que a seguinte (11a)? 
-E qual é a espécie da menor?
-
-
-```r
-df[10,4] &lt; df[11,4] # Petal.Width da 10ª linha é menor que da 11ª
-```
-
-```
-## [1] TRUE
-```
-
-```r
-df[10,5]
-```
-
-```
-## [1] setosa
-## Levels: setosa versicolor virginica
-```
 
 ---
 
